@@ -27,7 +27,7 @@
 <meta property="og:description" content="1 推荐系统 推荐系统即让系统根据已有的数据，比如用户的兴趣特点和动作行为，来判断用户对什么作品感兴趣，向用户推荐感兴趣的作品。  2 问题形式化 按照机器学习基本的思路，我们应该对问题建模，然后对比模型和真实情况的差异，通过让差异最小化来帮助我们找到最佳的参数。对于推荐系统也是一样的。  我们以抖音为例，假如我们有5个视频和4个用户     Video u1 u2">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-01-14T09:15:08.000Z">
-<meta property="article:modified_time" content="2022-01-14T14:00:11.478Z">
+<meta property="article:modified_time" content="2022-01-14T14:14:52.052Z">
 <meta property="article:author" content="lzm_res">
 <meta property="article:tag" content="机器学习">
 <meta name="twitter:card" content="summary">
@@ -553,9 +553,9 @@
 </table>
 <p>前三个是美食，后两个是美景</p>
 <p><br /></p>
-<p>通过表格我们很容易可以看出u1和u2比较喜欢美食，而u3和u4似乎比较喜欢美景，同时没有一个用户同时给所有视频打过分。</p>
+<p>通过表格我们很容易可以看出u1和u2比较喜欢美食，而u3和u4似乎比较喜欢美景，同时没有一个用户同时给所有视频。</p>
 <p><br /></p>
-<p>根据我们刚刚的陈述，我们希望根据已有的数据构建一个算法，然后通过算法预测出他们对未打分视频的评价，以此为他们推荐视频。</p>
+<p>根据我们刚刚的陈述，我们希望根据已有的数据构建一个算法，然后通过算法预测出他们对未点赞或评论视频的评价，以此为他们推荐视频。</p>
 <h1 id="基于内容的推荐系统">3 基于内容的推荐系统</h1>
 <p>我们刚刚根据不同视频的类别来判断了不同用户对不同类型视频的喜好，基于此，我们可以想到为每一个视频都建立一个特征向量，用这个特征向量来表示视频的特征，那我们如何表示用户对某个视频的喜好程度呢？</p>
 <p><br /></p>
@@ -580,7 +580,7 @@
 <ul>
 <li><p>我们会初始化<span class="math inline">\(x^1,x^2,…,x^{n_m},\theta^1,…,\theta^{n_u}\)</span>为一些比较小的值，这样在冷启动时为用户的推荐就会比较随机</p></li>
 <li><p>修改优化目标，结合求用户参数和视频特征的代价函数，让新的代价函数同时对<span class="math inline">\(x\)</span>和<span class="math inline">\(θ\)</span>进行，并使用梯度下降法进行训练</p></li>
-<li><p>训练完算法后，我们会对用户<span class="math inline">\(j\)</span>对视频<span class="math inline">\(i\)</span>的评分做出预测</p></li>
+<li><p>训练完算法后，我们会对用户<span class="math inline">\(j\)</span>对视频<span class="math inline">\(i\)</span>的点赞或评论做出预测</p></li>
 </ul>
 <h1 id="总结">7 总结</h1>
 <p>基于内容的推荐只考虑了对象本身的性质，提取出对象的特征，然后来和用户参数进行计算。</p>
