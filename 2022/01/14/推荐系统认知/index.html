@@ -19,20 +19,23 @@
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="Welcome to my studio">
-    <meta name="description" content="Welcome to my studio">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Res&#39;s Studio">
-<meta property="og:url" content="http://example.com/index.html">
+    <meta name="description" content="1 推荐系统 推荐系统即让系统根据已有的数据，比如用户的兴趣特点和动作行为，来判断用户对什么作品感兴趣，向用户推荐感兴趣的作品。  2 问题形式化 按照机器学习基本的思路，我们应该对问题建模，然后对比模型和真实情况的差异，通过让差异最小化来帮助我们找到最佳的参数。对于推荐系统也是一样的。  我们以抖音为例，假如我们有5个视频和4个用户     Video u1 u2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="推荐算法的认知">
+<meta property="og:url" content="http://example.com/2022/01/14/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E8%AE%A4%E7%9F%A5/index.html">
 <meta property="og:site_name" content="Res&#39;s Studio">
-<meta property="og:description" content="Welcome to my studio">
+<meta property="og:description" content="1 推荐系统 推荐系统即让系统根据已有的数据，比如用户的兴趣特点和动作行为，来判断用户对什么作品感兴趣，向用户推荐感兴趣的作品。  2 问题形式化 按照机器学习基本的思路，我们应该对问题建模，然后对比模型和真实情况的差异，通过让差异最小化来帮助我们找到最佳的参数。对于推荐系统也是一样的。  我们以抖音为例，假如我们有5个视频和4个用户     Video u1 u2">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-01-14T09:15:08.000Z">
+<meta property="article:modified_time" content="2022-01-14T13:47:06.564Z">
 <meta property="article:author" content="lzm_res">
+<meta property="article:tag" content="机器学习">
 <meta name="twitter:card" content="summary">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/favicon.ico">
     
-    <title>Res&#39;s Studio</title>
+    <title>推荐算法的认知 · Res&#39;s Studio</title>
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -219,10 +222,10 @@
         }
     </script>
     
-        <body class="home-body">
+        <body class="post-body">
     
         <!-- header -->
-        <header class="header header-mobile index-header">
+        <header class="header header-mobile">
     <!-- top read progress line -->
     <div class="header-element">
         <div class="read-progress"></div>
@@ -250,10 +253,21 @@
     </div>
     <!-- toggle banner for post layout -->
     
+        
+            <div class="banner">
+        
+            <div class="blog-title header-element">
+                <a href="/">Res&#39;s Studio</a>
+            </div>
+            <div class="post-title header-element">
+                <a href="#" class="post-name">推荐算法的认知</a>
+            </div>
+        </div>
+    
 </header>
 
         <!-- fixed footer -->
-        <footer class="footer-fixed index-footer-fixed">
+        <footer class="footer-fixed">
     <!-- back to top button -->
     <div class="footer-fixed-element">
         
@@ -283,17 +297,17 @@
     <!-- 主页  -->
     
         
-    <!-- 文章页  -->
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/index-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-                Res's Studio
-            <!-- 文章页  -->
+                推荐算法的认知
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
@@ -301,12 +315,54 @@
             <!-- 主页副标题  -->
             
                 
-                    闻道有先后 术业有专攻 如是而已
-                
-            <!-- 文章页  -->
+            <!-- 404 -->
             
         </p>
         <!-- 文章页 meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="机器学习">机器学习</a>
+    
+</div>
+
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">1.2k</span>Reading time: <span class="post-count reading-time">4 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <!-- 撰写日期 -->
+                    <span class="iconfont-archer post-intro-calander">&#xe676;</span>
+                    <span class="post-intro-time">2022/01/14</span>
+                    <!-- busuanzi -->
+                    
+                        <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                            <span class="iconfont-archer post-intro-busuanzi">&#xe602;</span>
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    
+                    <!-- 文章分享 -->
+                    <span class="share-wrapper">
+                        <span class="iconfont-archer share-icon">&#xe71d;</span>
+                        <span class="share-text">Share</span>
+                        <ul class="share-list">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -436,257 +492,170 @@
 
             <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
             <div class="container container-unloaded">
-                <main class="main index-page">
+                <main class="main post-page">
+    <article class="article-entry">
+        <p><br /></p>
+<h1 id="推荐系统">1 推荐系统</h1>
+<p>推荐系统即让系统根据已有的数据，比如用户的兴趣特点和动作行为，来判断用户对什么作品感兴趣，向用户推荐感兴趣的作品。</p>
+<p><br /></p>
+<h1 id="问题形式化">2 问题形式化</h1>
+<p>按照机器学习基本的思路，我们应该对问题建模，然后对比模型和真实情况的差异，通过让差异最小化来帮助我们找到最佳的参数。对于推荐系统也是一样的。</p>
+<p><br /></p>
+<p>我们以抖音为例，假如我们有5个视频和4个用户</p>
+<p><br /></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Video</th>
+<th style="text-align: center;">u1</th>
+<th style="text-align: center;">u2</th>
+<th style="text-align: center;">u3</th>
+<th style="text-align: center;">u4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">v1</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">v2</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">v3</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">v4</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">v5</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<p>前三个是美食，后两个是美景</p>
+<p><br /></p>
+<p>通过表格我们很容易可以看出Alice和Bob比较喜欢美食，而Carol和Dave似乎比较喜欢美景，同时没有一个用户同时给所有视频打过分。</p>
+<p><br /></p>
+<p>根据我们刚刚的陈述，我们希望根据已有的数据构建一个算法，然后通过算法预测出他们对未打分视频的评价，以此为他们推荐视频。</p>
+<h1 id="基于内容的推荐系统">3 基于内容的推荐系统</h1>
+<p>我们刚刚根据不同视频的类别来判断了不同用户对不同类型视频的喜好，基于此，我们可以想到为每一个视频都建立一个特征向量，用这个特征向量来表示视频的特征，那我们如何表示用户对某个视频的喜好程度呢？</p>
+<p><br /></p>
+<p>结合刚刚的栗子，我们应该给用户建立一个参数向量，来表示他们对不同类别视频的偏爱程度。</p>
+<h1 id="单用户的代价函数">4 单用户的代价函数</h1>
+<p>设用户<span class="math inline">\(j\)</span>的参数向量为<span class="math inline">\(\theta ^ j\)</span>，第<span class="math inline">\(i\)</span>个视频的特征值为<span class="math inline">\(x^i\)</span>，就像我们在线性回归中所作的那样，我们很自然的考虑如下的代价函数</p>
+<p><span class="math inline">\(\min\limits_{\theta^j} \frac{1}{2} \sum\limits_{i:r(i,j)=1} ((\theta^{j})^Tx^{i}-y^{(i,j)})^2\)</span></p>
+<p>其中<span class="math inline">\(i:r(i,j)=1\)</span>表示我们只计算用户<span class="math inline">\(j\)</span>所看过的那些视频，注意的是在一般的线性回归中我们会乘上<span class="math inline">\(\frac{1}{2m}\)</span>，但是这里我们没有这么做，一是因为扩大缩小常数倍是不影响极值点的，二是我们只计算了部分视频，加上参数会带来一些因为数值较小而遇到的麻烦。</p>
+<h1 id="所有用户的代价函数">5 所有用户的代价函数</h1>
+<p>只需对所有的用户求和即可</p>
+<p><span class="math inline">\(\min\limits_{\theta^1,...,\theta^{n_u}} \frac{1}{2} \sum_{j=1}^{n_u}\sum\limits_{i:r(i,j)=1} ((\theta^{j})^Tx^{i}-y^{(i,j)})^2\)</span></p>
+<p>用梯度下降法来更新参数只需要求一次导即可，比较简单，就不多写了</p>
+<h1 id="协同过滤">6 协同过滤</h1>
+<p>在之前基于内容的推荐系统中，我们根据视频的特征训练出了用户参数，同样的，我们可以根据用户参数训练出视频的特征</p>
+<p><span class="math inline">\(\min\limits_{x^1,...,x^{n_m}} \frac{1}{2} \sum\limits_{i=1}^{n_m}\sum\limits_{j:r(i,j)=1} ((\theta^{j})^Tx^{i}-y^{(i,j)})^2\)</span></p>
+<p>但是如果我们既没有用户的参数，也没有视频的特征该怎么办呢？其实这也是工业界研究的比较多的关于推荐系统的问题，也叫冷启动问题。</p>
+<p><br /></p>
+<p>名字非常的形象，刚刚启动的系统处于一个“冷”状态，意味着数据量小，在不断的积累数据的过程中，算法的表现也越来越好，系统逐渐“手感火热”</p>
+<p><br /></p>
+<p>而对于协同过滤算法，它的基本思想是这样的</p>
+<p><br /></p>
+<ul>
+<li><p>我们会初始化<span class="math inline">\(x^1,x^2,…,x^{n_m},\theta^1,…,\theta^{n_u}\)</span>为一些比较小的值，这样在冷启动时为用户的推荐就会比较随机</p></li>
+<li><p>修改优化目标，结合求用户参数和视频特征的代价函数，让新的代价函数同时对<span class="math inline">\(x\)</span>和<span class="math inline">\(θ\)</span>进行，并使用梯度下降法进行训练</p></li>
+<li><p>训练完算法后，我们会对用户<span class="math inline">\(j\)</span>对视频<span class="math inline">\(i\)</span>的评分做出预测</p></li>
+</ul>
+<h1 id="总结">7 总结</h1>
+<p>基于内容的推荐只考虑了对象本身的性质，提取出对象的特征，然后来和用户参数进行计算。</p>
+<p><br /></p>
+<p>而基于协同过滤的推荐算法考虑到了全部的数据，推荐的个性化程度比较高一些</p>
+<p><br /></p>
+<p>你可以想象，让<span class="math inline">\(\theta^1,…,\theta^{n_u}\)</span>固定时，我们其实是在考虑用户的历史习惯，固定<span class="math inline">\(x^1,…,x^{n_m}\)</span></p>
+<p>时，我们其实是在考虑兴趣相近的用户可能会对同样的东西感兴趣。这也是协同过滤的假设。</p>
+
+    </article>
+    <!-- license -->
     
-        
-        
-        
-        
+    <!-- paginator -->
+    <ul class="post-paginator">
+        <li class="next">
             
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/01/10/hello-world/">
-                
-                    <span class="iconfont-archer stick-top">&#xe63d;</span>
-                
-                <span class="abstract-title-text">关于我</span>
-            </a>
-            <div class="abstract-content">
-                
-你好，我是res，一个爱生活的人
-
-目前是CUCN四年级的一名学生亦是base上海的一名ByteDancer
-我的主要研究方向是：各类算法、Android/ios后端开发、大数据技术、计算机视觉
-我对人工智能也有很大的兴趣，但很多知识没有很深的了解，目前还在学习中
-
-未来，我将会在此博客上记录成长点滴，分享技术随笔
-我的家在苏州，学校在南京，公司在上海，因此我常穿梭在以上三城之中
-可以在博客首页联系我，也欢迎各位面基，技术交流畅谈人生我奉陪到底
-
-共勉
-很喜欢 《踮脚张望的时光》 中的一段话，我时常用来勉励自己，送给屏幕前的你
-
-总有一天你将破蛹而出，成长得...
-            </div>
-            <!-- read more -->
+        </li>
+        <li class="previous">
             
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/01/12">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/01/10</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="随笔">随笔</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2022/01/12/hadoop%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E7%8E%AF%E5%A2%83/" title="hadoop伪分布式环境">
+                    <div class="prevTitle">hadoop伪分布式环境</div>
+                </a>
             
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/01/14/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E8%AE%A4%E7%9F%A5/">
-                
-                <span class="abstract-title-text">推荐算法的认知</span>
-            </a>
-            <div class="abstract-content">
-                
-1 推荐系统
-推荐系统即让系统根据已有的数据，比如用户的兴趣特点和动作行为，来判断用户对什么作品感兴趣，向用户推荐感兴趣的作品。
-
-2 问题形式化
-按照机器学习基本的思路，我们应该对问题建模，然后对比模型和真实情况的差异，通过让差异最小化来帮助我们找到最佳的参数。对于推荐系统也是一样的。
-
-我们以抖音为例，假如我们有5个视频和4个用户
+        </li>
+    </ul>
+    <!-- comment -->
+    
+        <div class="post-comment">
+            <!-- 来必力 City 版安装代码 -->
 
 
-
-
-Video
-u1
-u2
-u3
-u4
-
-
-
-
-v1
-5
-5
-0
-0
-
-
-v2
-5
-?
-?
-0
-
-
-v3
-?
-4
-0
-?
-
-
-v4
-0
-0
-5
-4
-
-
-...
-            </div>
-            <!-- read more -->
             
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/01/14">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/01/14</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="机器学习">机器学习</a>
-    
-</div>
 
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
             
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/01/12/hadoop%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E7%8E%AF%E5%A2%83/">
-                
-                <span class="abstract-title-text">hadoop伪分布式环境</span>
-            </a>
-            <div class="abstract-content">
-                1 Hadoop生态圈
-1.1 什么是hadoop
-Hadoop 是一个能够对大量数据进行分布式处理的软件框架，具有可靠、高效、可伸缩的特点。Hadoop 的核心是 HDFS和 Mapreduce。Hadoop能将单机的工作任务进行分拆，变成协同工作的集群，解决了日益增加的文件存储量和数据量的瓶颈问题，hadoop是使用面向对象java语言编写的，因此它的拓展性也是非常的好。
-1.2 HDFS分布式文件系统
-HDFS是Hadoop生态圈中的一个组件，是一个独立的分布式文件系统，是开源免费的大数据 处理文件存储系统。HDFS是Master和Slave的主从结构。主要由Name-No...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/01/14">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/01/12</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="大数据">大数据</a>
-    
-</div>
 
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
+            
+
+            <!-- utteranc评论 -->
+
+
+            <!-- partial('_partial/comment/changyan') -->
+            <!--PC版-->
+
+
+            
+            
+
+            
+
+        </div>
     
-    <!-- paginator  -->
+    <!-- timeliness note -->
+    <!-- idea from: https://hexo.fluid-dev.com/posts/hexo-injector/#%E6%96%87%E7%AB%A0%E6%97%B6%E6%95%88%E6%80%A7%E6%8F%90%E7%A4%BA -->
+    
+    <!-- Mathjax -->
+    
+        
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+            }
+        };
+    </script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+
+
     
 </main>
 
                 <!-- profile -->
-                
-                    <div class="profile">
-    <img class="profile-avatar" alt="avatar" src= /avatar/guorong3.jpg />
-    <div class="profile-name">res</div>
-    
-        <div class="profile-signature">
-            我的生活是一首歌
-        </div>
-    
-    
-        <div class="profile-social">
-            
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-
-
-        </div>
-    
-    
-    
-        <div class="profile-link-item">
-            <a href="/about" class="about-me">
-                
-                ABOUT ME
-            </a>
-        </div>
-    
-    
-    
-</div>
-
                 
             </div>
             <footer class="footer footer-unloaded">
@@ -758,6 +727,23 @@ HDFS是Hadoop生态圈中的一个组件，是一个独立的分布式文件系�
 
         </div>
         <!-- toc -->
+        
+            <div class="toc-wrapper toc-wrapper-loding" style=
+
+
+
+
+
+
+
+    top:50vh;
+
+>
+                <div class="toc-catalog">
+                    <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+                </div>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.</span> <span class="toc-text">1 推荐系统</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E5%BD%A2%E5%BC%8F%E5%8C%96"><span class="toc-number">2.</span> <span class="toc-text">2 问题形式化</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E4%BA%8E%E5%86%85%E5%AE%B9%E7%9A%84%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F"><span class="toc-number">3.</span> <span class="toc-text">3 基于内容的推荐系统</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%95%E7%94%A8%E6%88%B7%E7%9A%84%E4%BB%A3%E4%BB%B7%E5%87%BD%E6%95%B0"><span class="toc-number">4.</span> <span class="toc-text">4 单用户的代价函数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%89%80%E6%9C%89%E7%94%A8%E6%88%B7%E7%9A%84%E4%BB%A3%E4%BB%B7%E5%87%BD%E6%95%B0"><span class="toc-number">5.</span> <span class="toc-text">5 所有用户的代价函数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4"><span class="toc-number">6.</span> <span class="toc-text">6 协同过滤</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">7.</span> <span class="toc-text">7 总结</span></a></li></ol>
+            </div>
         
         <!-- sidebar -->
         <div class="sidebar sidebar-hide">
@@ -915,7 +901,16 @@ HDFS是Hadoop生态圈中的一个组件，是一个独立的分布式文件系�
         
         <!-- async load share.js -->
         
+            <script src="/scripts/share.js?v=20211217" async></script>
+        
         <!-- mermaid -->
+        
+            <script src='https://cdn.jsdelivr.net/npm/mermaid@8.11.0/dist/mermaid.min.js'></script>
+            <script>
+                if (window.mermaid) {
+                    mermaid.initialize({theme: 'dark'});
+                }
+            </script>
         
     </body>
 </html>
