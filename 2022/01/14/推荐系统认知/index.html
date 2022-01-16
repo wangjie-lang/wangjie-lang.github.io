@@ -19,15 +19,15 @@
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="Welcome to my studio">
-    <meta name="description" content="1 推荐系统 推荐系统即让系统根据已有的数据，比如用户的兴趣特点和动作行为，来判断用户对什么作品感兴趣，向用户推荐感兴趣的作品。  2 问题形式化 按照机器学习基本的思路，我们应该对问题建模，然后对比模型和真实情况的差异，通过让差异最小化来帮助我们找到最佳的参数。对于推荐系统也是一样的。  我们以抖音为例，假如我们有5个视频和4个用户     Video u1 u2">
+    <meta name="description" content="1 推荐系统 推荐系统即让系统根据已有的数据，比如用户的兴趣特点和动作行为，来判断用户对什么作品感兴趣，向用户推荐感兴趣的作品。  2 问题形式化 按照机器学习基本的思路，我们应该对问题建模，然后对比模型和真实情况的差异，通过让差异最小化来帮助我们找到最佳的参数。对于推荐系统也是一样的。  我们以抖音为例，假如我们有5个视频和4个用户     Video   u1">
 <meta property="og:type" content="article">
 <meta property="og:title" content="推荐算法的认知">
 <meta property="og:url" content="http://example.com/2022/01/14/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E8%AE%A4%E7%9F%A5/index.html">
 <meta property="og:site_name" content="Res&#39;s Studio">
-<meta property="og:description" content="1 推荐系统 推荐系统即让系统根据已有的数据，比如用户的兴趣特点和动作行为，来判断用户对什么作品感兴趣，向用户推荐感兴趣的作品。  2 问题形式化 按照机器学习基本的思路，我们应该对问题建模，然后对比模型和真实情况的差异，通过让差异最小化来帮助我们找到最佳的参数。对于推荐系统也是一样的。  我们以抖音为例，假如我们有5个视频和4个用户     Video u1 u2">
+<meta property="og:description" content="1 推荐系统 推荐系统即让系统根据已有的数据，比如用户的兴趣特点和动作行为，来判断用户对什么作品感兴趣，向用户推荐感兴趣的作品。  2 问题形式化 按照机器学习基本的思路，我们应该对问题建模，然后对比模型和真实情况的差异，通过让差异最小化来帮助我们找到最佳的参数。对于推荐系统也是一样的。  我们以抖音为例，假如我们有5个视频和4个用户     Video   u1">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-01-14T09:15:08.000Z">
-<meta property="article:modified_time" content="2022-01-14T14:23:27.358Z">
+<meta property="article:modified_time" content="2022-01-16T07:45:05.572Z">
 <meta property="article:author" content="lzm_res">
 <meta property="article:tag" content="机器学习">
 <meta name="twitter:card" content="summary">
@@ -494,8 +494,7 @@
             <div class="container container-unloaded">
                 <main class="main post-page">
     <article class="article-entry">
-        <p><br /></p>
-<h1 id="推荐系统">1 推荐系统</h1>
+        <h1 id="推荐系统">1 推荐系统</h1>
 <p>推荐系统即让系统根据已有的数据，比如用户的兴趣特点和动作行为，来判断用户对什么作品感兴趣，向用户推荐感兴趣的作品。</p>
 <p><br /></p>
 <h1 id="问题形式化">2 问题形式化</h1>
@@ -504,52 +503,108 @@
 <p>我们以抖音为例，假如我们有5个视频和4个用户</p>
 <p><br /></p>
 <table>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Video</th>
-<th style="text-align: center;">u1</th>
-<th style="text-align: center;">u2</th>
-<th style="text-align: center;">u3</th>
-<th style="text-align: center;">u4</th>
+<tr>
+<th>
+Video
+</th>
+<th>
+u1
+</th>
+<th>
+u2
+</th>
+<th>
+u3
+</th>
+<th>
+u4
+</th>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">v1</td>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
+<tr>
+<td align="center">
+v1
+</td>
+<td align="center">
+1
+</td>
+<td align="center">
+1
+</td>
+<td align="center">
+0
+</td>
+<td align="center">
+0
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">v2</td>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">0</td>
+<tr>
+<td align="center">
+v2
+</td>
+<td align="center">
+1
+</td>
+<td align="center">
+-1
+</td>
+<td align="center">
+-1
+</td>
+<td align="center">
+0
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: center;">v3</td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">?</td>
+<tr>
+<td align="center">
+v3
+</td>
+<td align="center">
+-1
+</td>
+<td align="center">
+1
+</td>
+<td align="center">
+0
+</td>
+<td align="center">
+-1
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">v4</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">4</td>
+<tr>
+<td align="center">
+v4
+</td>
+<td align="center">
+0
+</td>
+<td align="center">
+0
+</td>
+<td align="center">
+1
+</td>
+<td align="center">
+1
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: center;">v5</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">?</td>
+<tr>
+<td align="center">
+v5
+</td>
+<td align="center">
+0
+</td>
+<td align="center">
+0
+</td>
+<td align="center">
+1
+</td>
+<td align="center">
+-1
+</td>
 </tr>
-</tbody>
 </table>
 <p>前三个是美食，后两个是美景</p>
 <p><br /></p>
@@ -776,6 +831,10 @@
         
         
         
+        
+        
+        
+        
     
     
     
@@ -820,14 +879,14 @@
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
         
-            <span class="sidebar-tag-name" data-tags="随笔">
-                <span class="iconfont-archer">&#xe606;</span>
-                随笔
-            </span>
-        
             <span class="sidebar-tag-name" data-tags="大数据">
                 <span class="iconfont-archer">&#xe606;</span>
                 大数据
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="随笔">
+                <span class="iconfont-archer">&#xe606;</span>
+                随笔
             </span>
         
             <span class="sidebar-tag-name" data-tags="机器学习">
@@ -846,14 +905,14 @@
         <div class="sidebar-panel-categories">
     <div class="sidebar-categories-name">
     
-        <span class="sidebar-category-name" data-categories="个人">
-            <span class="iconfont-archer">&#xe60a;</span>
-            个人
-        </span>
-    
         <span class="sidebar-category-name" data-categories="技术">
             <span class="iconfont-archer">&#xe60a;</span>
             技术
+        </span>
+    
+        <span class="sidebar-category-name" data-categories="个人">
+            <span class="iconfont-archer">&#xe60a;</span>
+            个人
         </span>
     
     </div>
