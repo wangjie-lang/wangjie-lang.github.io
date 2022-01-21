@@ -19,15 +19,15 @@
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="Welcome to my studio">
-    <meta name="description" content="链表和数组可以按照人们意愿排列元素的次序，但是，如果想要查看某个指定的元素，却又忘记了它的位置，就需要访问所有的元素，直到找到为止。如果集合中元素很多，将会消耗很多时间。有一种数据结构可以快速查找所需要查找的对象，这个就是哈希表（hash table）. HashMap是基于哈希表的 Map 接口的实现。此实现提供所有可选的映射操作，并允许使用 null 值和 null 键。（除了非">
+    <meta name="description" content="链表和数组可以按照人们意愿排列元素的次序，但是，如果想要查看某个指定的元素，却又忘记了它的位置，就需要访问所有的元素，直到找到为止。如果集合中元素很多，将会消耗很多时间。有一种数据结构可以快速查找所需要查找的对象，这个就是哈希表（hash table）. HashMap是基于哈希表的 Map 接口的实现。此实现提供所有可选的映射操作，并允许使用 null 值和 null 键。（除了非同步和允许使">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HashMap put()函数的简要分析">
-<meta property="og:url" content="http://example.com/2022/01/21/%E5%9F%BA%E4%BA%8Ejava7HashMap%E6%BA%90%E7%A0%81%E7%9A%84%E7%AE%80%E8%A6%81%E5%88%86%E6%9E%90/index.html">
+<meta property="og:url" content="http://example.com/2022/01/22/%E5%9F%BA%E4%BA%8Ejava7HashMap%E6%BA%90%E7%A0%81%E7%9A%84%E7%AE%80%E8%A6%81%E5%88%86%E6%9E%90/index.html">
 <meta property="og:site_name" content="Res&#39;s Studio">
-<meta property="og:description" content="链表和数组可以按照人们意愿排列元素的次序，但是，如果想要查看某个指定的元素，却又忘记了它的位置，就需要访问所有的元素，直到找到为止。如果集合中元素很多，将会消耗很多时间。有一种数据结构可以快速查找所需要查找的对象，这个就是哈希表（hash table）. HashMap是基于哈希表的 Map 接口的实现。此实现提供所有可选的映射操作，并允许使用 null 值和 null 键。（除了非">
+<meta property="og:description" content="链表和数组可以按照人们意愿排列元素的次序，但是，如果想要查看某个指定的元素，却又忘记了它的位置，就需要访问所有的元素，直到找到为止。如果集合中元素很多，将会消耗很多时间。有一种数据结构可以快速查找所需要查找的对象，这个就是哈希表（hash table）. HashMap是基于哈希表的 Map 接口的实现。此实现提供所有可选的映射操作，并允许使用 null 值和 null 键。（除了非同步和允许使">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-01-21T07:22:26.000Z">
-<meta property="article:modified_time" content="2022-01-21T12:11:01.440Z">
+<meta property="article:published_time" content="2022-01-21T16:22:26.000Z">
+<meta property="article:modified_time" content="2022-01-21T12:59:26.614Z">
 <meta property="article:author" content="lzm_res">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
@@ -339,7 +339,7 @@
                 <div class="post-intro-meta">
                     <!-- 撰写日期 -->
                     <span class="iconfont-archer post-intro-calander">&#xe676;</span>
-                    <span class="post-intro-time">2022/01/21</span>
+                    <span class="post-intro-time">2022/01/22</span>
                     <!-- busuanzi -->
                     
                         <span id="busuanzi_container_page_pv" class="busuanzi-pv">
@@ -494,10 +494,7 @@
             <div class="container container-unloaded">
                 <main class="main post-page">
     <article class="article-entry">
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&amp;id=1406649619&amp;auto=1&amp;height=32">
-</iframe>
-<p><br /></p>
-<p>链表和数组可以按照人们意愿排列元素的次序，但是，如果想要查看某个指定的元素，却又忘记了它的位置，就需要访问所有的元素，直到找到为止。如果集合中元素很多，将会消耗很多时间。有一种数据结构可以快速查找所需要查找的对象，这个就是哈希表（hash table）.</p>
+        <p>链表和数组可以按照人们意愿排列元素的次序，但是，如果想要查看某个指定的元素，却又忘记了它的位置，就需要访问所有的元素，直到找到为止。如果集合中元素很多，将会消耗很多时间。有一种数据结构可以快速查找所需要查找的对象，这个就是哈希表（hash table）.</p>
 <p>HashMap是基于哈希表的 Map 接口的实现。此实现提供所有可选的映射操作，并允许使用 null 值和 null 键。（除了非同步和允许使用 null 之外，HashMap 类与 Hashtable 大致相同。）此类不保证映射的顺序，特别是它不保证该顺序恒久不变。</p>
 <h1 id="hashmap的数据结构">1. HashMap的数据结构：</h1>
 <p>HashMap使用数组和链表来共同组成的。可以看出底层是一个数组，而数组的每个元素都是一个链表头。</p>
@@ -510,7 +507,7 @@
 <p>可以看出key值为null则会插入到数组的第一个位置。如果第一个位置存在，则替代，不存在则添加一个新的。稍后会看到addEntry函数。</p>
 <p>PS：考虑一个问题，key值为null会插入到table[0]，那为什么还要遍历整个链表呢？</p>
 <p>回到put函数中。在判断key不为null后，会求key的hash值，并通过indexFor函数找出这个key应该存在table中的位置。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * Returns index for hash code h.</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">indexFor</span> <span class="params">(<span class="keyword">int</span> h, <span class="keyword">int</span> length)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">return</span> h &amp; (length-<span class="number">1</span>);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * Returns index for hash code h.</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">indexFor</span> <span class="params">(<span class="keyword">int</span> h, <span class="keyword">int</span> length)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">return</span> h &amp; (length-<span class="number">1</span>);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
 <p>indexFor函数很简短，但是却实现的很巧妙。一般来说我们把一个数映射到一个固定的长度会用取余（%）运算，也就是h % length，但里巧妙地运用了table.length的特性。还记得前面说了数组的容量都是很特殊的数，是2的N次方。用二进制表示也就是一个1后面N个0，（length-1）就是N个1了。这里直接用与运算，运算速度快，效率高。但是这是是利用了length的特殊性，如果length不是2的N次方的话可能会增加冲突。</p>
 <p>前面的问题在这里就有答案了。因为indexFor函数返回值的范围是0到（length-1），所以可能会有key值不是null的Entry存到table[0]中，所以前面还是需要遍历链表的。</p>
 <p>得到key值对应在table中的位置，就可以对链表进行遍历，如果存在该key则，替换value，并把旧的value返回，modCount++代表操作数加1。这个属性用于Fail-Fast机制，后面讲到。如果遍历链表后发现key不存在，则要插入一个新的Entry到链表中。这时就会调用addEntry函数</p>
@@ -743,8 +740,8 @@
             
         
         <li class="archive-post-item">
-            <span class="archive-post-date">01/21</span>
-            <a class="archive-post-title" href="/2022/01/21/%E5%9F%BA%E4%BA%8Ejava7HashMap%E6%BA%90%E7%A0%81%E7%9A%84%E7%AE%80%E8%A6%81%E5%88%86%E6%9E%90/">HashMap put()函数的简要分析</a>
+            <span class="archive-post-date">01/22</span>
+            <a class="archive-post-title" href="/2022/01/22/%E5%9F%BA%E4%BA%8Ejava7HashMap%E6%BA%90%E7%A0%81%E7%9A%84%E7%AE%80%E8%A6%81%E5%88%86%E6%9E%90/">HashMap put()函数的简要分析</a>
         </li>
     
         
@@ -777,14 +774,14 @@
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
         
-            <span class="sidebar-tag-name" data-tags="大数据">
-                <span class="iconfont-archer">&#xe606;</span>
-                大数据
-            </span>
-        
             <span class="sidebar-tag-name" data-tags="算法">
                 <span class="iconfont-archer">&#xe606;</span>
                 算法
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="大数据">
+                <span class="iconfont-archer">&#xe606;</span>
+                大数据
             </span>
         
             <span class="sidebar-tag-name" data-tags="随笔">
@@ -813,14 +810,14 @@
         <div class="sidebar-panel-categories">
     <div class="sidebar-categories-name">
     
-        <span class="sidebar-category-name" data-categories="技术">
-            <span class="iconfont-archer">&#xe60a;</span>
-            技术
-        </span>
-    
         <span class="sidebar-category-name" data-categories="算法思想">
             <span class="iconfont-archer">&#xe60a;</span>
             算法思想
+        </span>
+    
+        <span class="sidebar-category-name" data-categories="技术">
+            <span class="iconfont-archer">&#xe60a;</span>
+            技术
         </span>
     
         <span class="sidebar-category-name" data-categories="个人">
