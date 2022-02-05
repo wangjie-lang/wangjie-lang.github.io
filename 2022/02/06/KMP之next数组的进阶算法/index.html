@@ -27,7 +27,7 @@
 <meta property="og:description" content="KMP算法是模式匹配专用算法。 它是在已知模式串的next或nextval数组的基础上执行的。 如果不知道它们二者之一，就没法使用KMP算法，因此我们需要计算它们。 KMP算法由两部分组成： 第一部分，计算模式串的next或nextval数组。 第二部分，利用计算好的模式串的nextval数组，进行模式匹配。 KMP算法中有next数组和nextval数组之分。 他们代表的意义和作用完">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-02-05T16:40:02.000Z">
-<meta property="article:modified_time" content="2022-02-05T16:42:54.204Z">
+<meta property="article:modified_time" content="2022-02-05T16:48:17.269Z">
 <meta property="article:author" content="lzm_res">
 <meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
@@ -503,8 +503,16 @@
 <p>KMP算法中有next数组和nextval数组之分。 他们代表的意义和作用完全一样，完全可以混用。 唯一不同的是，next数组在一些情况下有些缺 陷，而nextval是为了弥补这个缺陷而产生的。</p>
 <h1 id="一求解next数组">一、求解next数组</h1>
 <p>next数组值的程序设计求解方法：首先可以肯定的是第一位的next值为0，第二位的next值为1，后面求解每一位的next值时，根据前一位 进行比较。首先将前一位与其next值对应的内容进行比较，如果相等，则该位的next值就是前一位的next值加上1；如果不等，向前继续寻找next值对应的内容来与前一位进行比较，直到找到某个位上内容的next值对应的内容与前一位相等为止，则这个位对应的值加上1即为需求的next值；如果找到 第一位都没有找到与前一位相等的内容，那么需求的位上的next值即为1。</p>
-<p>举例： 模式串 a b a a b c a c next值 0 1 1 2 2 3 1 2 1.前两位必为0，1。 2.计算第三位的时候，看第二位b的next值，为1，则把b和1对应的a进行比较，不同，则第三位a的next的值为1，因为一直比到最前一位，都没有发生比较相同的现象。 3.计算第四位的时候，看第三位a的next值，为1，则把a和1对应的a进行比较，相同，则第四位a的next的值为第三位a的next值加上1，为2。因为是在第三位实现了其next值对应<br />
-的值与第三位的值相同。 4.计算第五位的时候，看第四位a的next值，为2，则把a和2对应的b进行比较，不同，则再将b对应的next值1对应的a与第四位的a进行比较，相同，则第五位的next值为第二位b的next值加上1，为2。因为是在第二位实现了其next值对应的值与第四位的值相同。 5.计算第六位的时候，看第五位b的next值，为2，则把b和2对应的b进行比较，相同，则第六位c的next值为第五位b的next值加上1，为3，因为是在第五位实现了其next值对应的值与第五位相 6.计算第七位的时候，看第六位c的next值，为3，则把c和3对应的a进行比较，不同，则再把第3位a的next值1对应的a与第六位c比较，仍然不同，则第七位的next值为1。 7.计算第八位的时候，看第七位a的next值，为1，则把a和1对应的a进行比较，相同，则第八位c的next值为第七位a的next值加上1，为2，因为是在第七位和实现了其next值对应的值与第七位相同。</p>
+<p>举例：</p>
+<p>模式串 a b a a b c a c</p>
+<p>next值 0 1 1 2 2 3 1 2</p>
+<p>1.前两位必为0，1。 2.计算第三位的时候，看第二位b的next值，为1，则把b和1对应的a进行比较，不同，则第三位a的next的值为1，因为一直比到最前一位，都没有发生比较相同的现象。</p>
+<p>3.计算第四位的时候，看第三位a的next值，为1，则把a和1对应的a进行比较，相同，则第四位a的next的值为第三位a的next值加上1，为2。因为是在第三位实现了其next值对应<br />
+的值与第三位的值相同。</p>
+<p>4.计算第五位的时候，看第四位a的next值，为2，则把a和2对应的b进行比较，不同，则再将b对应的next值1对应的a与第四位的a进行比较，相同，则第五位的next值为第二位b的next值加上1，为2。因为是在第二位实现了其next值对应的值与第四位的值相同。</p>
+<p>5.计算第六位的时候，看第五位b的next值，为2，则把b和2对应的b进行比较，相同，则第六位c的next值为第五位b的next值加上1，为3，因为是在第五位实现了其next值对应的值与第五位相。</p>
+<p>6.计算第七位的时候，看第六位c的next值，为3，则把c和3对应的a进行比较，不同，则再把第3位a的next值1对应的a与第六位c比较，仍然不同，则第七位的next值为1。</p>
+<p>7.计算第八位的时候，看第七位a的next值，为1，则把a和1对应的a进行比较，相同，则第八位c的next值为第七位a的next值加上1，为2，因为是在第七位和实现了其next值对应的值与第七位相同。</p>
 <h1 id="二求解nextval数组">二、求解nextval数组</h1>
 <p>求nextval数组值有两种方法，一种是不依赖next数组值直接用观察法求得，一种方法是根据next数组值进行推理，两种方法均可使用，视更喜欢哪种方法而定。</p>
 <p>本文主要分析nextval数组值的第二种方法：</p>
@@ -742,6 +750,10 @@
         
         
         
+        
+        
+        
+        
     
     
     
@@ -815,14 +827,14 @@
                 算法
             </span>
         
-            <span class="sidebar-tag-name" data-tags="大数据">
-                <span class="iconfont-archer">&#xe606;</span>
-                大数据
-            </span>
-        
             <span class="sidebar-tag-name" data-tags="随笔">
                 <span class="iconfont-archer">&#xe606;</span>
                 随笔
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="大数据">
+                <span class="iconfont-archer">&#xe606;</span>
+                大数据
             </span>
         
             <span class="sidebar-tag-name" data-tags="java">
@@ -851,14 +863,14 @@
             算法思想
         </span>
     
-        <span class="sidebar-category-name" data-categories="技术">
-            <span class="iconfont-archer">&#xe60a;</span>
-            技术
-        </span>
-    
         <span class="sidebar-category-name" data-categories="个人">
             <span class="iconfont-archer">&#xe60a;</span>
             个人
+        </span>
+    
+        <span class="sidebar-category-name" data-categories="技术">
+            <span class="iconfont-archer">&#xe60a;</span>
+            技术
         </span>
     
     </div>
