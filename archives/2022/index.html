@@ -441,8 +441,9 @@ CPU单核，那么毫无疑问Serial 垃圾收集器是你唯一的选择。
 CPU多核，关注吞吐量 ，那么选择PS+PO组合。
 CPU多核，关注用户停顿时间，JDK版本1.6或者1.7，那么选择CMS。
 CPU多核，关注用户停顿时间，JDK1.8及以上，JVM可用内存6G以上，那么选择G1。
-参数配置:
-1234567891011//设置Serial垃圾收集器（新生代） 开启：-XX:+UseSerialGC //设置PS+PO,新生代使用功能Parallel Scavenge 老年代将会使用Parallel Old收集器 开启 -XX:+UseParal...
+
+参数配置：
+1234567891011//设置Serial垃圾收集器（新生代） 开启：-XX:+UseSerialGC //设置PS+PO,新生代使用功能Parallel Scavenge 老年代将会使用Parallel Old收集器 开启 -XX:+UsePar...
             </div>
             <!-- read more -->
             
@@ -1196,11 +1197,6 @@ HashMap使用数组和链表...
                 算法
             </span>
         
-            <span class="sidebar-tag-name" data-tags="java">
-                <span class="iconfont-archer">&#xe606;</span>
-                java
-            </span>
-        
             <span class="sidebar-tag-name" data-tags="jvm">
                 <span class="iconfont-archer">&#xe606;</span>
                 jvm
@@ -1209,6 +1205,11 @@ HashMap使用数组和链表...
             <span class="sidebar-tag-name" data-tags="大数据">
                 <span class="iconfont-archer">&#xe606;</span>
                 大数据
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="java">
+                <span class="iconfont-archer">&#xe606;</span>
+                java
             </span>
         
             <span class="sidebar-tag-name" data-tags="随笔">
@@ -1252,14 +1253,14 @@ HashMap使用数组和链表...
             技术
         </span>
     
-        <span class="sidebar-category-name" data-categories="算法思想">
-            <span class="iconfont-archer">&#xe60a;</span>
-            算法思想
-        </span>
-    
         <span class="sidebar-category-name" data-categories="个人">
             <span class="iconfont-archer">&#xe60a;</span>
             个人
+        </span>
+    
+        <span class="sidebar-category-name" data-categories="算法思想">
+            <span class="iconfont-archer">&#xe60a;</span>
+            算法思想
         </span>
     
     </div>

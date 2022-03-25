@@ -19,15 +19,15 @@
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="Welcome to my studio">
-    <meta name="description" content="1 选择合适的垃圾回收器  CPU单核，那么毫无疑问Serial 垃圾收集器是你唯一的选择。 CPU多核，关注吞吐量 ，那么选择PS+PO组合。 CPU多核，关注用户停顿时间，JDK版本1.6或者1.7，那么选择CMS。 CPU多核，关注用户停顿时间，JDK1.8及以上，JVM可用内存6G以上，那么选择G1。 参数配置: 1234567891011&#x2F;&#x2F;设置Serial垃圾收集器（新生">
+    <meta name="description" content="1 选择合适的垃圾回收器  CPU单核，那么毫无疑问Serial 垃圾收集器是你唯一的选择。 CPU多核，关注吞吐量 ，那么选择PS+PO组合。 CPU多核，关注用户停顿时间，JDK版本1.6或者1.7，那么选择CMS。 CPU多核，关注用户停顿时间，JDK1.8及以上，JVM可用内存6G以上，那么选择G1。  参数配置： 1234567891011&#x2F;&#x2F;设置Serial垃圾收集器（">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JVM 参数调优">
 <meta property="og:url" content="http://example.com/2022/03/25/jvm-%E5%8F%82%E6%95%B0%E8%B0%83%E4%BC%98/index.html">
 <meta property="og:site_name" content="Res&#39;s Studio">
-<meta property="og:description" content="1 选择合适的垃圾回收器  CPU单核，那么毫无疑问Serial 垃圾收集器是你唯一的选择。 CPU多核，关注吞吐量 ，那么选择PS+PO组合。 CPU多核，关注用户停顿时间，JDK版本1.6或者1.7，那么选择CMS。 CPU多核，关注用户停顿时间，JDK1.8及以上，JVM可用内存6G以上，那么选择G1。 参数配置: 1234567891011&#x2F;&#x2F;设置Serial垃圾收集器（新生">
+<meta property="og:description" content="1 选择合适的垃圾回收器  CPU单核，那么毫无疑问Serial 垃圾收集器是你唯一的选择。 CPU多核，关注吞吐量 ，那么选择PS+PO组合。 CPU多核，关注用户停顿时间，JDK版本1.6或者1.7，那么选择CMS。 CPU多核，关注用户停顿时间，JDK1.8及以上，JVM可用内存6G以上，那么选择G1。  参数配置： 1234567891011&#x2F;&#x2F;设置Serial垃圾收集器（">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-03-25T09:08:33.000Z">
-<meta property="article:modified_time" content="2022-03-25T09:21:17.231Z">
+<meta property="article:modified_time" content="2022-03-25T09:34:37.574Z">
 <meta property="article:author" content="lzm_res">
 <meta property="article:tag" content="jvm">
 <meta name="twitter:card" content="summary">
@@ -499,8 +499,9 @@
 <li><p>CPU单核，那么毫无疑问Serial 垃圾收集器是你唯一的选择。</p></li>
 <li><p>CPU多核，关注吞吐量 ，那么选择PS+PO组合。</p></li>
 <li><p>CPU多核，关注用户停顿时间，JDK版本1.6或者1.7，那么选择CMS。</p></li>
-<li><p>CPU多核，关注用户停顿时间，JDK1.8及以上，JVM可用内存6G以上，那么选择G1。</p>
-<p>参数配置:</p>
+<li><p>CPU多核，关注用户停顿时间，JDK1.8及以上，JVM可用内存6G以上，那么选择G1。</p></li>
+</ul>
+<p>参数配置：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//设置Serial垃圾收集器（新生代）</span></span><br><span class="line"> 开启：-XX:+UseSerialGC</span><br><span class="line"></span><br><span class="line"> <span class="comment">//设置PS+PO,新生代使用功能Parallel Scavenge 老年代将会使用Parallel Old收集器</span></span><br><span class="line"> 开启 -XX:+UseParallelOldGC</span><br><span class="line"></span><br><span class="line"> <span class="comment">//CMS垃圾收集器（老年代）</span></span><br><span class="line"> 开启 -XX:+UseConcMarkSweepGC</span><br><span class="line"></span><br><span class="line"> <span class="comment">//设置G1垃圾收集器</span></span><br><span class="line"> 开启 -XX:+UseG1GC</span><br></pre></td></tr></table></figure>
 <h1 id="调整内存大小">2 调整内存大小</h1>
 <p>现象：垃圾收集频率非常频繁。</p>
@@ -519,8 +520,7 @@
 <p>原因：如果对应区域空间不足，导致需要频繁GC来释放空间，在JVM堆内存无法增加的情况下，可以调整对应区域的大小比率。</p>
 <p>注意：也许并非空间不足，而是因为内存泄造成内存无法回收。从而导致GC频繁。</p>
 <p>参数配置：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//survivor区和Eden区大小比率</span></span><br><span class="line"> 指令：-XX:SurvivorRatio=<span class="number">6</span>  <span class="comment">//S区和Eden区占新生代比率为1:6,两个S区2:6</span></span><br><span class="line"></span><br><span class="line"> <span class="comment">//新生代和老年代的占比</span></span><br><span class="line"> -XX:NewRatio=<span class="number">4</span>  <span class="comment">//表示新生代:老年代 = 1:4 即老年代占整个堆的4/5；默认值=2</span></span><br></pre></td></tr></table></figure></li>
-</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//survivor区和Eden区大小比率</span></span><br><span class="line"> 指令：-XX:SurvivorRatio=<span class="number">6</span>  <span class="comment">//S区和Eden区占新生代比率为1:6,两个S区2:6</span></span><br><span class="line"></span><br><span class="line"> <span class="comment">//新生代和老年代的占比</span></span><br><span class="line"> -XX:NewRatio=<span class="number">4</span>  <span class="comment">//表示新生代:老年代 = 1:4 即老年代占整个堆的4/5；默认值=2</span></span><br></pre></td></tr></table></figure>
 <h1 id="调整对象升老年代的年龄">5 调整对象升老年代的年龄</h1>
 <p>现象：老年代频繁GC，每次回收的对象很多。</p>
 <p>原因：如果升代年龄小，新生代的对象很快就进入老年代了，导致老年代对象变多，而这些对象其实在随后的很短时间内就可以回收，这时候可以调整对象的升级代年龄，让对象不那么容易进入老年代解决老年代空间不足频繁GC问题。</p>
@@ -538,7 +538,7 @@
 <p>原因：G1和CMS  部分GC阶段是并发进行的，业务线程和垃圾收集线程一起工作，也就说明垃圾收集的过程中业务线程会生成新的对象，所以在GC的时候需要预留一部分内存空间来容纳新产生的对象，如果这个时候内存空间不足以容纳新产生的对象，那么JVM就会停止并发收集暂停所有业务线程（STW）来保证垃圾收集的正常运行。这个时候可以调整GC触发的时机（比如在老年代占用60%就触发GC），这样就可以预留足够的空间来让业务线程创建的对象有足够的空间分配。</p>
 <p>注意：提早触发GC会增加老年代GC的频率。</p>
 <p>配置参数：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//使用多少比例的老年代后开始CMS收集，默认是68%，如果频繁发生SerialOld卡顿，应该调小</span></span><br><span class="line"> -XX:CMSInitiatingOccupancyFraction</span><br><span class="line"> </span><br><span class="line"> <span class="comment">//G1混合垃圾回收周期中要包括的旧区域设置占用率阈值。默认占用率为 65%</span></span><br><span class="line"> -XX:G1MixedGCLiveThresholdPercent=<span class="number">65</span> </span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//使用多少比例的老年代后开始CMS收集，默认是68%，如果频繁发生SerialOld卡顿，应该调小</span></span><br><span class="line"> -XX:CMSInitiatingOccupancyFraction</span><br><span class="line"></span><br><span class="line"> <span class="comment">//G1混合垃圾回收周期中要包括的旧区域设置占用率阈值。默认占用率为 65%</span></span><br><span class="line"> -XX:G1MixedGCLiveThresholdPercent=<span class="number">65</span> </span><br></pre></td></tr></table></figure>
 <h1 id="调整jvm本地内存大小">8 调整JVM本地内存大小</h1>
 <p>现象：GC的次数、时间和回收的对象都正常，堆内存空间充足，但是报OOM</p>
 <p>原因：JVM除了堆内存之外还有一块堆外内存，这片内存也叫本地内存，可是这块内存区域不足了并不会主动触发GC，只有在堆内存区域触发的时候顺带会把本地内存回收了，而一旦本地内存分配不足就会直接报OOM异常。</p>
@@ -936,11 +936,6 @@
                 算法
             </span>
         
-            <span class="sidebar-tag-name" data-tags="java">
-                <span class="iconfont-archer">&#xe606;</span>
-                java
-            </span>
-        
             <span class="sidebar-tag-name" data-tags="jvm">
                 <span class="iconfont-archer">&#xe606;</span>
                 jvm
@@ -949,6 +944,11 @@
             <span class="sidebar-tag-name" data-tags="大数据">
                 <span class="iconfont-archer">&#xe606;</span>
                 大数据
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="java">
+                <span class="iconfont-archer">&#xe606;</span>
+                java
             </span>
         
             <span class="sidebar-tag-name" data-tags="随笔">
@@ -992,14 +992,14 @@
             技术
         </span>
     
-        <span class="sidebar-category-name" data-categories="算法思想">
-            <span class="iconfont-archer">&#xe60a;</span>
-            算法思想
-        </span>
-    
         <span class="sidebar-category-name" data-categories="个人">
             <span class="iconfont-archer">&#xe60a;</span>
             个人
+        </span>
+    
+        <span class="sidebar-category-name" data-categories="算法思想">
+            <span class="iconfont-archer">&#xe60a;</span>
+            算法思想
         </span>
     
     </div>
