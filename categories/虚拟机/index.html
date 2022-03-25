@@ -430,6 +430,48 @@
             
         
         <article class="index-post">
+            <a class="abstract-title" href="/2022/03/25/jvm-%E5%8F%82%E6%95%B0%E8%B0%83%E4%BC%98/">
+                
+                <span class="abstract-title-text">JVM 参数调优</span>
+            </a>
+            <div class="abstract-content">
+                1 选择合适的垃圾回收器
+
+CPU单核，那么毫无疑问Serial 垃圾收集器是你唯一的选择。
+CPU多核，关注吞吐量 ，那么选择PS+PO组合。
+CPU多核，关注用户停顿时间，JDK版本1.6或者1.7，那么选择CMS。
+CPU多核，关注用户停顿时间，JDK1.8及以上，JVM可用内存6G以上，那么选择G1。
+参数配置:
+1234567891011//设置Serial垃圾收集器（新生代） 开启：-XX:+UseSerialGC //设置PS+PO,新生代使用功能Parallel Scavenge 老年代将会使用Parallel Old收集器 开启 -XX:+UseParal...
+            </div>
+            <!-- read more -->
+            
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2022/03/25">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/03/25</span>
+                </div>
+                <!-- tags -->
+                
+                    <div class= abstract-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="jvm">jvm</a>
+    
+</div>
+
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+        
+        
+        
+        
+            
+        
+        <article class="index-post">
             <a class="abstract-title" href="/2022/03/23/JVM-GC%E5%8E%9F%E7%90%86%E8%AE%A4%E7%9F%A5/">
                 
                 <span class="abstract-title-text">JVM GC原理认知</span>
@@ -646,7 +688,18 @@ JAVA GC（Garbage Collection，垃圾回收）机制是区别C++的一个重要
         
         
         
+        
+        
+        
+        
+        
     
+        
+        
+        
+        
+        
+        
         
         
         
@@ -711,7 +764,7 @@ JAVA GC（Garbage Collection，垃圾回收）机制是区别C++的一个重要
     
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 12
+        Total : 13
         </div>
         <!-- search  -->
         
@@ -725,6 +778,12 @@ JAVA GC（Garbage Collection，垃圾回收）机制是区别C++的一个重要
             <div class="archive-year"> 2022 </div>
             <ul class="year-list">
             
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/25</span>
+            <a class="archive-post-title" href="/2022/03/25/jvm-%E5%8F%82%E6%95%B0%E8%B0%83%E4%BC%98/">JVM 参数调优</a>
+        </li>
+    
         
         <li class="archive-post-item">
             <span class="archive-post-date">03/23</span>
@@ -833,14 +892,14 @@ JAVA GC（Garbage Collection，垃圾回收）机制是区别C++的一个重要
                 DB
             </span>
         
-            <span class="sidebar-tag-name" data-tags="机器学习">
-                <span class="iconfont-archer">&#xe606;</span>
-                机器学习
-            </span>
-        
             <span class="sidebar-tag-name" data-tags="技术站点">
                 <span class="iconfont-archer">&#xe606;</span>
                 技术站点
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="机器学习">
+                <span class="iconfont-archer">&#xe606;</span>
+                机器学习
             </span>
         
     </div>
@@ -859,14 +918,14 @@ JAVA GC（Garbage Collection，垃圾回收）机制是区别C++的一个重要
             虚拟机
         </span>
     
-        <span class="sidebar-category-name" data-categories="算法思想">
-            <span class="iconfont-archer">&#xe60a;</span>
-            算法思想
-        </span>
-    
         <span class="sidebar-category-name" data-categories="技术">
             <span class="iconfont-archer">&#xe60a;</span>
             技术
+        </span>
+    
+        <span class="sidebar-category-name" data-categories="算法思想">
+            <span class="iconfont-archer">&#xe60a;</span>
+            算法思想
         </span>
     
         <span class="sidebar-category-name" data-categories="个人">
