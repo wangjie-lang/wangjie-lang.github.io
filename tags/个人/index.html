@@ -22,7 +22,7 @@
     <meta name="description" content="Welcome to my studio">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Res&#39;s Studio">
-<meta property="og:url" content="http://example.com/archives/2022/02/index.html">
+<meta property="og:url" content="http://example.com/tags/%E4%B8%AA%E4%BA%BA/index.html">
 <meta property="og:site_name" content="Res&#39;s Studio">
 <meta property="og:description" content="Welcome to my studio">
 <meta property="og:locale" content="en_US">
@@ -430,113 +430,41 @@
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/2022/02/14/Huffman%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E7%9A%84%E6%97%A0%E6%8D%9F%E5%8E%8B%E7%BC%A9/">
+            <a class="abstract-title" href="/2022/01/01/index/">
                 
-                <span class="abstract-title-text">Huffman编码实现图片的无损压缩</span>
+                    <span class="iconfont-archer stick-top">&#xe63d;</span>
+                
+                <span class="abstract-title-text">关于我</span>
             </a>
             <div class="abstract-content">
-                一、 什么是Huffman树
-当用 n 个结点（都做叶子结点且都有各自的权值）试图构建一棵树时，如果构建的这棵树的带权路径长度最小，称这棵树为“最优二叉树”，也叫Huffman树。在构建Huffman树时，要使树的带权路径长度最小，只需要遵循一个原则，那就是：权重越大的结点离树根越近。
-二、Huffman树有什么用？
- 对于一组具有确定权值的叶子结点，可以构造出多个具有不同带权路径长度的二叉树，我们把其中最小带权路径长度的二叉树称为Huffman树（最优二叉树），Huffman树可以用于构造代码长度最短的编码，因此我们常用Huffman树实现文件压缩。
-三、Huffman实现图片...
+                
+你好，我是res，一个爱生活的人
+
+目前是CUCN四年级的一名学生曾是base上海的一名ByteDancer
+今年七月 我将供职于苏州农行数据中心从事新核心系统建设相关工作
+我的主要研究方向是：各类算法、Androd/ios后端开发、大数据技术、计算机视觉
+我对人工智能也有很大的兴趣，但很多知识没有很深的了解，目前还在学习中
+
+未来，我将会在此博客上记录成长点滴，分享技术随笔
+我的家在苏州，学校在南京，因此我常穿梭在以上两城之中
+可以在博客首页联系我，也欢迎各位面基，技术交流畅谈人生我奉陪到底
+
+共勉
+很喜欢 《踮脚张望的时光》 中的一段话，我时常用来勉励自己...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/02/14">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/02/14</span>
+                <div class="abstract-date" title="Last updated: 2022/04/01">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/01/01</span>
                 </div>
                 <!-- tags -->
                 
                     <div class= abstract-tags >
     
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="算法">算法</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/02/09/mvcc%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/">
-                
-                <span class="abstract-title-text">对mvcc的实现原理的理解</span>
-            </a>
-            <div class="abstract-content">
-                在数据库领域，面对高并发环境下数据冲突的问题，常用的解决方案有两种：
-
-想办法避免冲突。使用悲观锁来确保同一时刻只有一人能对数据进行更改，常见的实现有读写锁（Read/Write Locks）、两阶段锁（Two-Phase Locking）等。
-允许冲突，但发生冲突的时候，要有能力检测到。这种方法被称为乐观锁，即先乐观的认为冲突不会发生，除非被证明（检测到）当前确实产生冲突了。常见的实现有逻辑时钟（Logical Clock）、MVCC（Multi-version Cocurrent Control）等。
-
-在这些解决方案中，MVCC 由于其出色的性能优势，而被越来越多的数据库...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/02/10">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/02/09</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="DB">DB</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/02/06/KMP%E4%B9%8Bnext%E6%95%B0%E7%BB%84%E7%9A%84%E8%BF%9B%E9%98%B6%E7%AE%97%E6%B3%95/">
-                
-                <span class="abstract-title-text">KMP之next数组的进阶算法</span>
-            </a>
-            <div class="abstract-content">
-                KMP算法是模式匹配专用算法。
-它是在已知模式串的next或nextval数组的基础上执行的。
-如果不知道它们二者之一，就没法使用KMP算法，因此我们需要计算它们。
-KMP算法由两部分组成：
-第一部分，计算模式串的next或nextval数组。
-第二部分，利用计算好的模式串的nextval数组，进行模式匹配。
-KMP算法中有next数组和nextval数组之分。 他们代表的意义和作用完全一样，完全可以混用。 唯一不同的是，next数组在一些情况下有些缺 陷，而nextval是为了弥补这个缺陷而产生的。
-一、求解next数组
-next数组值的程序设计求解方法：首先可以肯定的...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/02/06">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/02/06</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="算法">算法</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="个人">个人</a>
     
 </div>
 
