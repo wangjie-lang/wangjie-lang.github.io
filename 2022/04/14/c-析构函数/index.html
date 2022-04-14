@@ -19,23 +19,23 @@
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="Welcome to my studio">
-    <meta name="description" content="1 Hadoop生态圈 1.1 什么是hadoop Hadoop 是一个能够对大量数据进行分布式处理的软件框架，具有可靠、高效、可伸缩的特点。Hadoop 的核心是 HDFS和 Mapreduce。Hadoop能将单机的工作任务进行分拆，变成协同工作的集群，解决了日益增加的文件存储量和数据量的瓶颈问题，hadoop是使用面向对象java语言编写的，因此它的拓展性也是非常的好。 1.2 HDF">
+    <meta name="description" content="1、什么是析构函数 析构函数，其实就是析构函数的相反操作，构造函数是创建对象时候，用来给对象的成员数据赋值的，而析构函数是用了清理对象的。 2、析构函数的特点  析构函数就是位取反运算符+类名表示。 构造函数可以有多个，而析构函数只能有一个，不可重载，不能有参数。 与构造函数相同，析构函数没有返回值。如果没有显式写出析构函数，编译器会自动加上一个默认的析构函数，如果写了的话，就不会再加">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hadoop伪分布式环境">
-<meta property="og:url" content="http://example.com/2022/01/12/hadoop%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E7%8E%AF%E5%A2%83/index.html">
+<meta property="og:title" content="c++析构函数">
+<meta property="og:url" content="http://example.com/2022/04/14/c-%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0/index.html">
 <meta property="og:site_name" content="Res&#39;s Studio">
-<meta property="og:description" content="1 Hadoop生态圈 1.1 什么是hadoop Hadoop 是一个能够对大量数据进行分布式处理的软件框架，具有可靠、高效、可伸缩的特点。Hadoop 的核心是 HDFS和 Mapreduce。Hadoop能将单机的工作任务进行分拆，变成协同工作的集群，解决了日益增加的文件存储量和数据量的瓶颈问题，hadoop是使用面向对象java语言编写的，因此它的拓展性也是非常的好。 1.2 HDF">
+<meta property="og:description" content="1、什么是析构函数 析构函数，其实就是析构函数的相反操作，构造函数是创建对象时候，用来给对象的成员数据赋值的，而析构函数是用了清理对象的。 2、析构函数的特点  析构函数就是位取反运算符+类名表示。 构造函数可以有多个，而析构函数只能有一个，不可重载，不能有参数。 与构造函数相同，析构函数没有返回值。如果没有显式写出析构函数，编译器会自动加上一个默认的析构函数，如果写了的话，就不会再加">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-01-12T07:03:52.000Z">
-<meta property="article:modified_time" content="2022-01-14T09:07:42.582Z">
+<meta property="article:published_time" content="2022-04-14T15:36:54.000Z">
+<meta property="article:modified_time" content="2022-04-14T15:48:40.818Z">
 <meta property="article:author" content="lzm_res">
-<meta property="article:tag" content="大数据">
+<meta property="article:tag" content="c++">
 <meta name="twitter:card" content="summary">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/guorong3.ico">
     
-    <title>hadoop伪分布式环境 · Res&#39;s Studio</title>
+    <title>c++析构函数 · Res&#39;s Studio</title>
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -260,7 +260,7 @@
                 <a href="/">Res&#39;s Studio</a>
             </div>
             <div class="post-title header-element">
-                <a href="#" class="post-name">hadoop伪分布式环境</a>
+                <a href="#" class="post-name">c++析构函数</a>
             </div>
         </div>
     
@@ -306,7 +306,7 @@
         <h1 class="intro-title">
             <!-- 主页  -->
             
-                hadoop伪分布式环境
+                c++析构函数
             <!-- 404 -->
             
         </h1>
@@ -326,20 +326,20 @@
                     <div class= post-intro-tags >
     
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="大数据">大数据</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="c++">c++</a>
     
 </div>
 
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">1.8k</span>Reading time: <span class="post-count reading-time">7 min</span></span>
+                        <span>Word count: <span class="post-count word-count">581</span>Reading time: <span class="post-count reading-time">2 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <!-- 撰写日期 -->
                     <span class="iconfont-archer post-intro-calander">&#xe676;</span>
-                    <span class="post-intro-time">2022/01/12</span>
+                    <span class="post-intro-time">2022/04/14</span>
                     <!-- busuanzi -->
                     
                         <span id="busuanzi_container_page_pv" class="busuanzi-pv">
@@ -494,83 +494,30 @@
             <div class="container container-unloaded">
                 <main class="main post-page">
     <article class="article-entry">
-        <h1 id="hadoop生态圈">1 Hadoop生态圈</h1>
-<h2 id="什么是hadoop">1.1 什么是hadoop</h2>
-<p>Hadoop 是一个能够对大量数据进行分布式处理的软件框架，具有可靠、高效、可伸缩的特点。Hadoop 的核心是 <strong>HDFS</strong>和 <strong>Mapreduce</strong>。Hadoop能将单机的工作任务进行分拆，变成协同工作的集群，解决了日益增加的文件存储量和数据量的瓶颈问题，hadoop是使用面向对象java语言编写的，因此它的拓展性也是非常的好。</p>
-<h2 id="hdfs分布式文件系统">1.2 HDFS分布式文件系统</h2>
-<p>HDFS是Hadoop生态圈中的一个组件，是一个独立的分布式文件系统，是开源免费的大数据 处理文件存储系统。HDFS是<strong>Master</strong>和<strong>Slave</strong>的主从结构。主要由<strong>Name-Node</strong>、<strong>Secondary NameNode</strong>、<strong>DataNode</strong>构成。当客户需要写数据时，先在NameNode 上创建文件结构并确定数据块副本将要写道哪几个 datanode ，然后将多个代写 DataNode 组成一个写数据管道，保证写入过程完整统一写入。读取数据时则先通过 NameNode 找到存储数据块副本的所有 DataNode ，根据与读取客户端距离排序数据块，然后取最近的。</p>
-<h3 id="name-node">1.2.1 Name-Node</h3>
-<p>Name-Node是分布式文件系统中的管理者，主要负责管理文件系统的命名空间、集群配置信息和存储块的复制等</p>
-<h3 id="secondary-namenode">1.2.2 Secondary NameNode</h3>
-<p>Secondary NameNode主要是辅助 NameNode，分担其工作，紧急情况可以辅助恢复</p>
-<h3 id="datanode">1.2.3 DataNode</h3>
-<p>DataNode是Slave节点，实际存储数据、执行数据块的读写并汇报存储信息给NameNode</p>
-<h2 id="mapreduce编程模型">1.3 MapReduce编程模型</h2>
-<p> MapReduce是一种编程模型，是一种编程方法，是抽象的理论，采用了<font color=red>分而治之</font>的思想。MapReduce框架的核心步骤主要分两部分，分别是<strong>Map</strong>和<strong>Reduce</strong>。每个文件分片由单独的机器去处理，这就是Map的方法，将各个机器计算的结果汇总并得到最终的结果，这就是Reduce的方法。Map 函数就近读入 HDFS 分片数据，并将Map 处理结果先写入环形内存缓冲区。如果当缓冲区写到一定阈值则开始分割如文件，此期间会按 Reduce 个数进行数据分区并且按相同键值进行分区内排序，然后写入输出分区文件。reduce 函数开始时会从各自已经完成的Map 输出结果的节点中选择自己需要的数据分区复制到自己的节点，并进行合并及排序，再将此数据作为输入进行 Reduce 处理，最后将结果输出到 HDFS 中。充分利用各个结点的计算资源分布、并行的完成 Mapreduce处理。</p>
-<h1 id="hadoop伪分布式环境搭建">2 hadoop伪分布式环境搭建</h1>
-<p>Hadoop伪分布式搭建首先要下载VMware新建虚拟机配置好网络连接，为了方便操作管理虚拟机，使用FinalShell可视化界面进行操作，其次要准备好jdk和hadoop安装包，接下来就可以进行hadoop伪分布式的搭建了，以下操作都是使用FinalShell通过ip地址连接到虚拟机之后，在FinalShell中进行的操作。</p>
-<h2 id="关闭防火墙">1）关闭防火墙</h2>
-<p>service iptables start; # 立即开启防火墙，但是重启后失效。</p>
-<p>service iptables stop; # 立即关闭防火墙，但是重启后失效。</p>
-<p>chkconfig iptables on; # 开启防火墙，重启后生效</p>
-<p>chkconfig iptables off; # 关闭防火墙，重启后生效</p>
-<h2 id="配置主机名">2）配置主机名</h2>
-<p>配置/etc/sysconfig目录下的<strong>network</strong>文件，进入后使用vim命令进行编辑，设置</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">NETWORKING=yes</span><br><span class="line">HOSTNAME=hadoop01</span><br></pre></td></tr></table></figure>
-<p>使用wq！命令进行保存，因为是系统文件，在编辑完之后不要忘了source一下。</p>
-<h2 id="配置hosts">3）配置Hosts</h2>
-<p>在/etc/hosts文件中填入 ip地址和对应的主机名</p>
-<h2 id="配置免密互通">4）配置免密互通</h2>
-<p>在命令行输入ssh-keygen命令，出现提示后填写y，因为网络协议问题，如果不配置的话远程主机访问可能每次都要输入密码，相当繁琐。</p>
-<h2 id="安装jdk和hadoop">5）安装jdk和hadoop</h2>
-<p>将准备好的文件在FinalShell软件中直接拖拽进入虚拟机中，在命令行使用tar -zvxf+地址 分别解压jdk和hadoop。</p>
-<h2 id="配置hadoop">6）配置hadoop</h2>
-<p><strong>① 修改 hadoop-env.sh</strong></p>
-<p>主要是修改java_home的路径，在hadoop-env.sh的第27行,把</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=$&#123;JAVA_HOME&#125;</span><br></pre></td></tr></table></figure>
-<p>修改成具体的路径，最后source一下</p>
-<p><strong>② 修改 core-site.xml</strong></p>
-<p>主要用来增加namenode配置、文件存储位置配置</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">             <span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">                 <span class="comment">&lt;!--用来指定hdfs的老大，namenode的地址--&gt;</span></span><br><span class="line">                 <span class="tag">&lt;<span class="name">name</span>&gt;</span>fs.defaultFS<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">                 <span class="tag">&lt;<span class="name">value</span>&gt;</span>hdfs://hadoop01:9000<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">             <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">             <span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">                 <span class="comment">&lt;!--用来指定hadoop运行时产生文件的存放目录--&gt;</span>    </span><br><span class="line">                  <span class="tag">&lt;<span class="name">name</span>&gt;</span>hadoop.tmp.dir<span class="tag">&lt;/<span class="name">name</span>&gt;</span> </span><br><span class="line">                 <span class="tag">&lt;<span class="name">value</span>&gt;</span>/home/park/work/hadoop-2.7.1/tmp<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">             <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><strong>③修改 hdfs-site.xml</strong></p>
-<p>主要是配置包括自身在内的备份副本数量。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">                 <span class="comment">&lt;!--指定hdfs保存数据副本的数量，包括自己，默认为3--&gt;</span></span><br><span class="line">                    <span class="comment">&lt;!--伪分布式模式，此值必须为1--&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">name</span>&gt;</span>dfs.replication<span class="tag">&lt;/<span class="name">name</span>&gt;</span> </span><br><span class="line">                    <span class="tag">&lt;<span class="name">value</span>&gt;</span>3<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p></property></p>
-<p></configuration></p>
-<p><strong>④修改 mapred-site.xml</strong></p>
-<p>主要是配置mapreduce运行在yarn上</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">                 <span class="comment">&lt;!--指定hdfs保存数据副本的数量，包括自己，默认为3--&gt;</span></span><br><span class="line">                    <span class="comment">&lt;!--伪分布式模式，此值必须为1--&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">name</span>&gt;</span>dfs.replication<span class="tag">&lt;/<span class="name">name</span>&gt;</span> </span><br><span class="line">                    <span class="tag">&lt;<span class="name">value</span>&gt;</span>3<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p></property></p>
-<p></configuration></p>
-<p><strong>⑤修改 yarn-site.xml</strong></p>
-<p>主要是配置yarn的resourcemanager地址</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">name</span>&gt;</span>yarn.resourcemanager.hostname<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">value</span>&gt;</span>hadoop01<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">              <span class="comment">&lt;!--NodeManager获取数据的方式--&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">name</span>&gt;</span>yarn.nodemanager.aux-services<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">value</span>&gt;</span>mapreduce_shuffle<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p></property></p>
-<p></configuration></p>
-<p><strong>⑥修改 slaves</strong></p>
-<p>因为hadoop本身就是个主从结构的多节点，但在伪分布式中只有这样一个结点。</p>
-<p><strong>⑦配置hadoop的环境变量</strong></p>
-<p>在etc文件夹下使用vim命令编辑profile文件</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> HADOOP_HOME=具体路径</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> PATH=具体路径/bin</span><br></pre></td></tr></table></figure>
-<p>系统文件保存后需要重新source一下。</p>
-<p><strong>⑧格式化namenode</strong></p>
-<p>在hadoop/bin目录下使用命令</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">namenode hadoop namenode -format</span><br></pre></td></tr></table></figure>
-<p>格式化成功的标志是:</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Storage directory /tmp/hadoop-root/dfs/name has     been successfully formatted</span><br></pre></td></tr></table></figure>
-<p>以上配置全部结束以后启动伪分布式集群：</p>
-<p><strong>start-all.sh</strong></p>
-<p>使用<strong>jps</strong>命令查看进程</p>
-<p>如果看到五个进程</p>
-<p>那么hadoop伪分布式集群就启动成功了</p>
-<p>也可以在浏览器中输入 虚拟机ip地址的50070端口查看可视化界面</p>
-<p>如果集群正常启动，而无法访问可视化界面，则非常有可能就是防火墙未关闭</p>
-<p>最后关闭集群，命令是</p>
-<p><strong>stop-all.sh</strong></p>
-<p><br /></p>
-<p><strong>附:</strong></p>
-<p><strong>常用的hdfs命令</strong></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">hadoop fs -mkdir /user/trunk  创建目录 </span><br><span class="line">hadoop fs -ls /user 列举 </span><br><span class="line">hadoop fs -lsr /user   (递归的) </span><br><span class="line">hadoop fs -put test.txt /user/trunk 上传文件 </span><br><span class="line">hadoop fs -put test.txt .(复制到hdfs当前目录下） </span><br><span class="line">hadoop fs -get /user/trunk/test.txt . (复制到本地当前目录下) 下载 </span><br><span class="line">hadoop fs -cat /user/trunk/test.txt 查看文件内容 </span><br><span class="line">hadoop fs -tail /user/trunk/test.txt  (查看最后<span class="number">1000</span>字节) </span><br><span class="line">hadoop fs -rm /user/trunk/test.txt </span><br><span class="line">hadoop fs -rmdir /user/trunk </span><br><span class="line">hadoop fs -<span class="built_in">help</span> ls (查看ls命令的帮助文档)</span><br></pre></td></tr></table></figure>
+        <h1 id="什么是析构函数">1、什么是析构函数</h1>
+<p>析构函数，其实就是<strong>析构函数</strong>的相反操作，构造函数是创建对象时候，用来给对象的成员数据赋值的，而析构函数是用了清理对象的。</p>
+<h1 id="析构函数的特点">2、析构函数的特点</h1>
+<ul>
+<li><p>析构函数就是位取反运算符+类名表示。</p></li>
+<li><p>构造函数可以有多个，而析构函数只能有一个，不可重载，不能有参数。</p></li>
+<li><p>与构造函数相同，析构函数没有返回值。如果没有显式写出析构函数，编译器会自动加上一个默认的析构函数，如果写了的话，就不会再加。</p></li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Point</span>&#123;</span></span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="built_in">Point</span>(<span class="keyword">double</span> xx=<span class="number">0.0</span>,<span class="keyword">double</span> yy=<span class="number">0.0</span>);</span><br><span class="line">        ~<span class="built_in">Point</span>();</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">get</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">        <span class="keyword">double</span> x,y;</span><br><span class="line">&#125;;</span><br><span class="line">Point::<span class="built_in">Point</span>(<span class="keyword">double</span> xx,<span class="keyword">double</span> yy):<span class="built_in">x</span>(xx),<span class="built_in">y</span>(yy)&#123;</span><br><span class="line">&#125;</span><br><span class="line">Point::~<span class="built_in">Point</span>()&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;end&quot;</span>&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Point::get</span><span class="params">()</span></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;x=&quot;</span>&lt;&lt;x&lt;&lt;<span class="string">&quot;  y=&quot;</span>&lt;&lt;y&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="function">Point <span class="title">a</span><span class="params">(<span class="number">5.0</span>,<span class="number">6.0</span>)</span></span>;</span><br><span class="line">    a.<span class="built_in">get</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="析构函数被调用的情况">3、 析构函数被调用的情况</h1>
+<ul>
+<li>对象的生命周期结束</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="function">Point <span class="title">a</span><span class="params">(<span class="number">5.0</span>,<span class="number">6.0</span>)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">fun</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>如果对象是new出来的，用delete释放空间时候会调用。不手动delete是不会调用析构函数的。</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    Point *a=<span class="keyword">new</span> <span class="built_in">Point</span>(<span class="number">6.0</span>,<span class="number">7.0</span>);</span><br><span class="line">    <span class="keyword">delete</span> a;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>对象a是对象b的成员，对象b的析构函数被调用时候，对象a的析构函数也会被调用。</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Point</span>&#123;</span></span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="built_in">Point</span>(<span class="keyword">double</span> xx=<span class="number">0.0</span>,<span class="keyword">double</span> yy=<span class="number">0.0</span>);</span><br><span class="line">        ~<span class="built_in">Point</span>();</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">get</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">        <span class="keyword">double</span> x,y;</span><br><span class="line">&#125;;</span><br><span class="line">Point::<span class="built_in">Point</span>(<span class="keyword">double</span> xx,<span class="keyword">double</span> yy):<span class="built_in">x</span>(xx),<span class="built_in">y</span>(yy)&#123;</span><br><span class="line">&#125;</span><br><span class="line">Point::~<span class="built_in">Point</span>()&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Point end&quot;</span>&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Point::get</span><span class="params">()</span></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;x=&quot;</span>&lt;&lt;x&lt;&lt;<span class="string">&quot;  y=&quot;</span>&lt;&lt;y&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Line</span>&#123;</span></span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="built_in">Line</span>();</span><br><span class="line">        ~<span class="built_in">Line</span>();</span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">        Point point;</span><br><span class="line">&#125;;</span><br><span class="line">Line::<span class="built_in">Line</span>()&#123;</span><br><span class="line">&#125;</span><br><span class="line">Line::~<span class="built_in">Line</span>()&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Line end&quot;</span>&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">test</span>&#123;</span></span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="built_in">test</span>();</span><br><span class="line">        ~<span class="built_in">test</span>();</span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">        Line line;</span><br><span class="line">&#125;;</span><br><span class="line">test::<span class="built_in">test</span>()&#123;</span><br><span class="line">&#125;</span><br><span class="line">test::~<span class="built_in">test</span>()&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;test end&quot;</span>&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    test A;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="总结">4、总结</h1>
+<p>析构函数不仅仅是用来清理对象释放内存的，也可以是在析构函数中编写在清理对象前需要做的一些工作。</p>
 
     </article>
     <!-- license -->
@@ -579,17 +526,12 @@
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href="/2022/01/14/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E8%AE%A4%E7%9F%A5/" title="推荐算法的认知">
-                    <div class="nextTitle">推荐算法的认知</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href="/2022/01/01/hello-world/" title="关于我">
-                    <div class="prevTitle">关于我</div>
+                <a href="/2022/03/29/JVM-%E8%A7%A3%E9%87%8A%E5%99%A8%E5%92%8C%E7%BC%96%E8%AF%91%E5%99%A8/" title="JVM 解释器和编译器">
+                    <div class="prevTitle">JVM 解释器和编译器</div>
                 </a>
             
         </li>
@@ -714,7 +656,7 @@
                 <div class="toc-catalog">
                     <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
                 </div>
-                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hadoop%E7%94%9F%E6%80%81%E5%9C%88"><span class="toc-number">1.</span> <span class="toc-text">1 Hadoop生态圈</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFhadoop"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 什么是hadoop</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hdfs%E5%88%86%E5%B8%83%E5%BC%8F%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 HDFS分布式文件系统</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#name-node"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.2.1 Name-Node</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#secondary-namenode"><span class="toc-number">1.2.2.</span> <span class="toc-text">1.2.2 Secondary NameNode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#datanode"><span class="toc-number">1.2.3.</span> <span class="toc-text">1.2.3 DataNode</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mapreduce%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.3.</span> <span class="toc-text">1.3 MapReduce编程模型</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#hadoop%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-number">2.</span> <span class="toc-text">2 hadoop伪分布式环境搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99"><span class="toc-number">2.1.</span> <span class="toc-text">1）关闭防火墙</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E5%90%8D"><span class="toc-number">2.2.</span> <span class="toc-text">2）配置主机名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEhosts"><span class="toc-number">2.3.</span> <span class="toc-text">3）配置Hosts</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%85%8D%E5%AF%86%E4%BA%92%E9%80%9A"><span class="toc-number">2.4.</span> <span class="toc-text">4）配置免密互通</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85jdk%E5%92%8Chadoop"><span class="toc-number">2.5.</span> <span class="toc-text">5）安装jdk和hadoop</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEhadoop"><span class="toc-number">2.6.</span> <span class="toc-text">6）配置hadoop</span></a></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0"><span class="toc-number">1.</span> <span class="toc-text">1、什么是析构函数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0%E7%9A%84%E7%89%B9%E7%82%B9"><span class="toc-number">2.</span> <span class="toc-text">2、析构函数的特点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0%E8%A2%AB%E8%B0%83%E7%94%A8%E7%9A%84%E6%83%85%E5%86%B5"><span class="toc-number">3.</span> <span class="toc-text">3、 析构函数被调用的情况</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">4.</span> <span class="toc-text">4、总结</span></a></li></ol>
             </div>
         
         <!-- sidebar -->

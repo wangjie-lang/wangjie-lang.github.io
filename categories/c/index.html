@@ -19,26 +19,20 @@
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="Welcome to my studio">
-    <meta name="description" content="在了解双亲委派模型之前先来看看以下程序 123456789public class String &amp;#123;    static &amp;#123;        System.out.println(&quot;自定义String&quot;);    &amp;#125;    public static void main(String[] args) &amp;#123;        System.out">
-<meta property="og:type" content="article">
-<meta property="og:title" content="JVM 双亲委派模型">
-<meta property="og:url" content="http://example.com/2022/03/17/JVM-%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%A8%A1%E5%9E%8B/index.html">
+    <meta name="description" content="Welcome to my studio">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Res&#39;s Studio">
+<meta property="og:url" content="http://example.com/categories/c/index.html">
 <meta property="og:site_name" content="Res&#39;s Studio">
-<meta property="og:description" content="在了解双亲委派模型之前先来看看以下程序 123456789public class String &amp;#123;    static &amp;#123;        System.out.println(&quot;自定义String&quot;);    &amp;#125;    public static void main(String[] args) &amp;#123;        System.out">
+<meta property="og:description" content="Welcome to my studio">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/wangjie-lang/blog_pictures/imgs/class_loader_picture.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/wangjie-lang/blog_pictures/imgs/break_class_loader_pic.png">
-<meta property="article:published_time" content="2022-03-16T17:55:24.000Z">
-<meta property="article:modified_time" content="2022-03-16T18:34:30.904Z">
 <meta property="article:author" content="lzm_res">
-<meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/wangjie-lang/blog_pictures/imgs/class_loader_picture.png">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/guorong3.ico">
     
-    <title>JVM 双亲委派模型 · Res&#39;s Studio</title>
+    <title>Res&#39;s Studio</title>
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -225,8 +219,6 @@
         }
     </script>
     
-        <body class="post-body">
-    
         <!-- header -->
         <header class="header header-mobile">
     <!-- top read progress line -->
@@ -256,17 +248,6 @@
     </div>
     <!-- toggle banner for post layout -->
     
-        
-            <div class="banner">
-        
-            <div class="blog-title header-element">
-                <a href="/">Res&#39;s Studio</a>
-            </div>
-            <div class="post-title header-element">
-                <a href="#" class="post-name">JVM 双亲委派模型</a>
-            </div>
-        </div>
-    
 </header>
 
         <!-- fixed footer -->
@@ -293,79 +274,24 @@
 
 
 
-    height:50vh;
-
 ">
     
     <!-- 主页  -->
-    
-        
-    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
-            
-                JVM 双亲委派模型
-            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
-                
-            <!-- 404 -->
-            
         </p>
         <!-- 文章页 meta -->
-        
-            <div class="post-intros">
-                <!-- 文章页标签  -->
-                
-                    <div class= post-intro-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="java">java</a>
-    
-</div>
-
-                
-                
-                    <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">904</span>Reading time: <span class="post-count reading-time">3 min</span></span>
-                    </div>
-                
-                <div class="post-intro-meta">
-                    <!-- 撰写日期 -->
-                    <span class="iconfont-archer post-intro-calander">&#xe676;</span>
-                    <span class="post-intro-time">2022/03/17</span>
-                    <!-- busuanzi -->
-                    
-                        <span id="busuanzi_container_page_pv" class="busuanzi-pv">
-                            <span class="iconfont-archer post-intro-busuanzi">&#xe602;</span>
-                            <span id="busuanzi_value_page_pv"></span>
-                        </span>
-                    
-                    <!-- 文章分享 -->
-                    <span class="share-wrapper">
-                        <span class="iconfont-archer share-icon">&#xe71d;</span>
-                        <span class="share-text">Share</span>
-                        <ul class="share-list">
-                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
-                                <div class="share-qrcode"></div>
-                            </li>
-                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
-                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
-                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
-                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
-                        </ul>
-                    </span>
-                </div>
-            </div>
         
     </div>
 </div>
@@ -495,88 +421,52 @@
 
             <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
             <div class="container container-unloaded">
-                <main class="main post-page">
-    <article class="article-entry">
-        <p>在了解双亲委派模型之前先来看看以下程序</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">String</span> </span>&#123;</span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;自定义String&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;hello world&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>没错，这是一段执行报错的程序，运行结果如下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">错误: 在类 java.lang.String 中找不到 main 方法, 请将 main 方法定义为:</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></span><br><span class="line"><span class="function">否则 JavaFX 应用程序类必须扩展javafx.application.Application</span></span><br></pre></td></tr></table></figure>
-<p>我们都知道，各个类加载器都有自己加载的范围，比如引导类加载器只加载Java核心库中的class如String，那如果用户自己建一个包名和类名与String相同的类，会不会被引导类加载器加载。通过上述执行结果中的报错信息可以发现，JVM实际上加载了rt.jar中的String类，并未加载自定义的String，这个就是JVM的双亲委派模型解决的问题之一。</p>
-<h1 id="双亲委派模型是什么">1 双亲委派模型是什么</h1>
-<p>JVM对class文件是按需加载，在加载class的过程，如果当前类加载器存在父类加载器，都会将加载请求先委派给父类加载器，这种任务委派方式被称为双亲委派。</p>
-<h1 id="双亲委派模型的工作原理">2 双亲委派模型的工作原理</h1>
-<p>类加载器之间存在非继承的层次关系（如下图），这种层次关系让类加载器加载的类也具有优先级，也就是前面示例中rt.jar中的String优于自定义String的加载，这种优先级加载详细原理如下：</p>
-<ul>
-<li>当一个类加载器收到加载请求，他并不会自己加载，而是把加载请求委托给父类加载器。</li>
-<li>如果父类加载器也存在父类加载器，继续向上委托，如此递归，直至最顶层引导类加载器。</li>
-<li>如果父类加载器能完成类的加载，就正常返回，反之，由子类进行加载，递归依次向下。</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wangjie-lang/blog_pictures/imgs/class_loader_picture.png" title="" alt="alt  双亲委派模型图" data-align="center"></p>
-<h1 id="双亲委派模型的优点">3 双亲委派模型的优点</h1>
-<ul>
-<li>避免全限定名相同的类被重复加载，导致程序异常。</li>
-<li>保护程序，防止核心库API被篡改。</li>
-</ul>
-<h1 id="源码">4 源码</h1>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">protected</span> Class&lt;?&gt; loadClass(String name, <span class="keyword">boolean</span> resolve) <span class="keyword">throws</span> ClassNotFoundException &#123;</span><br><span class="line">    <span class="keyword">synchronized</span> (getClassLoadingLock(name)) &#123;</span><br><span class="line">        <span class="comment">// First, check if the class has already been loaded</span></span><br><span class="line">        Class&lt;?&gt; c = findLoadedClass(name);</span><br><span class="line">        <span class="keyword">if</span> (c == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">long</span> t0 = System.nanoTime();</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                <span class="comment">// 实现委派</span></span><br><span class="line">                <span class="keyword">if</span> (parent != <span class="keyword">null</span>) &#123;</span><br><span class="line">                    c = parent.loadClass(name, <span class="keyword">false</span>);</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    c = findBootstrapClassOrNull(name);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">                <span class="comment">// ClassNotFoundException thrown if class not found</span></span><br><span class="line">                <span class="comment">// from the non-null parent class loader</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (c == <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="comment">// If still not found, then invoke findClass in order</span></span><br><span class="line">                <span class="comment">// to find the class.</span></span><br><span class="line">                <span class="keyword">long</span> t1 = System.nanoTime();</span><br><span class="line">                c = findClass(name);</span><br><span class="line"></span><br><span class="line">                <span class="comment">// this is the defining class loader; record the stats</span></span><br><span class="line">                sun.misc.PerfCounter.getParentDelegationTime().addTime(t1 - t0);</span><br><span class="line">                sun.misc.PerfCounter.getFindClassTime().addElapsedTimeFrom(t1);</span><br><span class="line">                sun.misc.PerfCounter.getFindClasses().increment();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (resolve) &#123;</span><br><span class="line">            resolveClass(c);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> c;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h1 id="如何打破双亲委派模型">5 如何打破双亲委派模型</h1>
-<p>SPI(Service Provider Interface)，是一种服务发现机制，它通过在ClassPath路径下的META-INF/services文件夹查找文件，自动加载文件里所定义的类，如JDBC驱动。如下图，SPI核心类定义在rt.jar中（如java.lang.Driver接口），所以本身是由启动类加载器加载，当调用SPI接口的实现类时，启动类加载器是无法加载实现类的，这个时候就提供了线程上下文类加载器(Thread Context ClassLoader)加载实现类，ThreadContextClassLoader是可以通过java.lang.Thread#setContextClassLoader方法设置，如果没有设置默认为ApplicationClassLoader,这样双亲委派模型中ApplicationClassLoader-&gt;BootStrapClassLoader的委派，变成了BootStrapClassLoader-&gt;ApplicationClassLoader的委派，这样就打破了双亲委派的类加载模式。</p>
-<figure>
-<img src="https://cdn.jsdelivr.net/gh/wangjie-lang/blog_pictures/imgs/break_class_loader_pic.png" alt="alt SPI架构图" /><figcaption aria-hidden="true">alt SPI架构图</figcaption>
-</figure>
-
-    </article>
-    <!-- license -->
+                <main class="main index-page">
     
-    <!-- paginator -->
-    <ul class="post-paginator">
-        <li class="next">
+        
+        
+        
+        
             
-                <div class="nextSlogan">Next Post</div>
-                <a href="/2022/03/20/%E5%9B%BD%E5%86%85%E7%9F%A5%E5%90%8D%E4%BA%92%E8%81%94%E7%BD%91%E5%A4%A7%E5%8E%82%E6%8A%80%E6%9C%AF%E5%9B%A2%E9%98%9F%E5%8D%9A%E5%AE%A2%E6%B1%87%E6%80%BB/" title="国内知名技术团队博客汇总">
-                    <div class="nextTitle">国内知名技术团队博客汇总</div>
-                </a>
+        
+        <article class="index-post">
+            <a class="abstract-title" href="/2022/04/14/c-%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0/">
+                
+                <span class="abstract-title-text">c++析构函数</span>
+            </a>
+            <div class="abstract-content">
+                1、什么是析构函数
+析构函数，其实就是析构函数的相反操作，构造函数是创建对象时候，用来给对象的成员数据赋值的，而析构函数是用了清理对象的。
+2、析构函数的特点
+
+析构函数就是位取反运算符+类名表示。
+构造函数可以有多个，而析构函数只能有一个，不可重载，不能有参数。
+与构造函数相同，析构函数没有返回值。如果没有显式写出析构函数，编译器会自动加上一个默认的析构函数，如果写了的话，就不会再加。
+
+1234567891011121314151617181920212223#include&lt;bits/stdc++.h&gt;using namespace std;class ...
+            </div>
+            <!-- read more -->
             
-        </li>
-        <li class="previous">
-            
-                <div class="prevSlogan">Previous Post</div>
-                <a href="/2022/02/14/Huffman%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E7%9A%84%E6%97%A0%E6%8D%9F%E5%8E%8B%E7%BC%A9/" title="Huffman编码实现图片的无损压缩">
-                    <div class="prevTitle">Huffman编码实现图片的无损压缩</div>
-                </a>
-            
-        </li>
-    </ul>
-    <!-- comment -->
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2022/04/14">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/04/14</span>
+                </div>
+                <!-- tags -->
+                
+                    <div class= abstract-tags >
     
-        <div class="post-comment">
-            <!-- 来必力 City 版安装代码 -->
-
-
-            
-
-            
-
-            
-
-            <!-- utteranc评论 -->
-
-
-            <!-- partial('_partial/comment/changyan') -->
-            <!--PC版-->
-
-
-            
-            
-
-            
-
-        </div>
     
-    <!-- timeliness note -->
-    <!-- idea from: https://hexo.fluid-dev.com/posts/hexo-injector/#%E6%96%87%E7%AB%A0%E6%97%B6%E6%95%88%E6%80%A7%E6%8F%90%E7%A4%BA -->
+        <a class="post-tag" href="javascript:void(0);" data-tags="c++">c++</a>
     
-    <!-- Mathjax -->
+</div>
+
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+    <!-- paginator  -->
     
 </main>
 
@@ -652,23 +542,6 @@
 
         </div>
         <!-- toc -->
-        
-            <div class="toc-wrapper toc-wrapper-loding" style=
-
-
-
-
-
-
-
-    top:50vh;
-
->
-                <div class="toc-catalog">
-                    <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
-                </div>
-                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%A8%A1%E5%9E%8B%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-number">1.</span> <span class="toc-text">1 双亲委派模型是什么</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">2 双亲委派模型的工作原理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%BC%98%E7%82%B9"><span class="toc-number">3.</span> <span class="toc-text">3 双亲委派模型的优点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%BA%90%E7%A0%81"><span class="toc-number">4.</span> <span class="toc-text">4 源码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%89%93%E7%A0%B4%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%A8%A1%E5%9E%8B"><span class="toc-number">5.</span> <span class="toc-text">5 如何打破双亲委派模型</span></a></li></ol>
-            </div>
         
         <!-- sidebar -->
         <div class="sidebar sidebar-hide">
@@ -1089,16 +962,7 @@
         
         <!-- async load share.js -->
         
-            <script src="/scripts/share.js?v=20211217" async></script>
-        
         <!-- mermaid -->
-        
-            <script src='https://cdn.jsdelivr.net/npm/mermaid@8.11.0/dist/mermaid.min.js'></script>
-            <script>
-                if (window.mermaid) {
-                    mermaid.initialize({theme: 'dark'});
-                }
-            </script>
         
     </body>
 </html>
